@@ -1,5 +1,4 @@
-## Codebook for the Samsung project 
-
+# Codebook for the Samsung project 
 
 The raw data for the Samsung project was downloaded from the following url:
 
@@ -7,7 +6,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 And full description of the data is available here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-# The raw data 
+## The raw data 
 
 The raw data file is downloaded into a subdirectory called UCI HAR Dataset within the directory data. It contains two subdirectores (test and train) and four files: 
 
@@ -15,7 +14,7 @@ The raw data file is downloaded into a subdirectory called UCI HAR Dataset withi
 
 2.- Activity_labels, which describe the six categories of activities performed by the subjects. They are: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING. Each activity was labeled with numbers from 1 through 6, respectively.
 
-3.- A features_info file describing the 561 features variables and how they were generated from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ taken from the Samsung phones.
+3.- A features_info file describing the 561 features variables and how they were generated from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ taken from the Samsung phones.These variables unitless and ranges from -1 to +1.
 
 4.- A features file naming the 561 initial features varables according with the conventions set in the features_info file. 
 
@@ -33,7 +32,7 @@ Out of these file we created one data set merging the three files.
 
 Finally, we marge both data sets into one.
 
-# Data transformation 
+## Data transformation 
 
 We created one data set merging the test and train sets
 
@@ -45,5 +44,14 @@ We created one data set merging the test and train sets
 
 4.- Finally, we took the resulting data set and add one more tranformation: Per subject and per activity, we calculated the mean per feature. This resulted in a 180x88 tidy data set. 
 
+## Tidy data set
 
+The tidy data set was saved in the directory "data" under the name "tdat.txt".
+
+It contains 84 column variables with the subject, activity and mean of the samples takes.
+
+subject: Unit: integer; values: 1,2,..., 30.
+activity: units: character; values: 
+
+and 86 grouped features which are unitless and have their value range between -1 and +1. 
 
