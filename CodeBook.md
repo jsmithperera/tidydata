@@ -136,7 +136,7 @@ and 86 grouped mean per feature. These variables do not have units and their val
 "freqBodyGyroJerkMag.std"                        
 "freqBodyGyroJerkMag.meanFreq"                    
 "angle.timeBodyAccelerometerMean.gravity"        
-"angle.timeBodyAccelerometerJerkMean.gravityMean" 
+"angle.timeBodyAccelerometerJerkMean.gravityMean"
 "angle.timeBodyGyroMean.gravityMean"             
 "angle.timeBodyGyroJerkMean.gravityMean"          
 "angle.X.gravityMean"                            
